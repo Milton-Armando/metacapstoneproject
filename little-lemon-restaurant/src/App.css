@@ -1,0 +1,209 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    max-width: fit-content;
+    margin-left: 22%;
+    margin-right: 22%;
+    align-items: center;
+    align-content: center;
+}
+
+/* Header Styles */
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+}
+
+.header-container .logo img {
+    width: 65px;
+    padding-right: 10px;
+}
+
+header h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(189, 189, 52);
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    padding: 9px;
+    display: flex;
+    justify-content: center;
+    border-radius: 19px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Promo Banner Styles */
+.promo-banner {
+    background-image: url("./assets/images/banner.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 18px;
+}
+
+.promo-banner h2 {
+    font-size: 36px;
+}
+
+.promo-banner p {
+    font-size: 14px;
+}
+
+/* Services Grid Styles */
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+
+}
+
+.service {
+    display: flex;
+    background-color: #eedaaf;
+    padding: 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: baseline;
+    max-height: 255px;
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    max-height: 47%;
+    max-width: 73%;
+    border-radius: 4px;
+    margin: 0 13%;
+}
+
+.service h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.service p {
+    font-size: 12px;
+    margin: 2%;
+}
+
+.service a {
+    font-weight: bold;
+    color: #a36705;
+    margin-top: 5%;
+}
+
+.service a:hover {
+    text-decoration: underline;
+}
+
+
+/* Formulário */
+.submission-section {
+    max-width: 600px;
+    margin: 0 20% 0 20%;
+}
+.submission-section label {
+    display: block;
+    font-size: 14px;
+    color: #444;
+    margin-top: 15px;
+}
+
+.submission-section input,
+.submission-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.submission-section h2 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.submission-section textarea {
+    resize: none;
+    height: 80px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 8px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-save {
+    background: #e0e0e0;
+    color: #333;
+}
+
+.btn-preview {
+    background: #4b64e8;
+    color: #fff;
+}
+
+/* Footer Styles */
+footer {
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-logo img {
+    width: 40px;
+}
+
+footer .footer-copy p {
+    font-size: 14px;
+    color: #a36705;
+}
